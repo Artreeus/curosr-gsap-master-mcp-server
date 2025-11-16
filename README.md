@@ -1,20 +1,56 @@
-# 🎯 GSAP Master MCP Server
+# 🎯 GSAP Master MCP Server for Cursor IDE
 
-**The most comprehensive GSAP MCP server ever created** - Transform Claude into a surgical precision animation expert with AI-powered intent analysis, complete API coverage, and production-ready patterns.
+**By Artreeus** - AI-powered GSAP animation assistance directly in Cursor IDE!
 
-> 🎉 **ALL GSAP PLUGINS NOW 100% FREE** thanks to Webflow! Including SplitText, MorphSVG, DrawSVG, and more!
+Transform Cursor into your personal GSAP animation expert with AI-powered intent analysis, complete API coverage, and production-ready patterns.
 
-## ⚡ **Quick Start**
+🎉 **ALL GSAP PLUGINS NOW 100% FREE** thanks to Webflow! Including SplitText, MorphSVG, DrawSVG, and more!
 
+---
+
+## ⚡ Quick Start (3 Steps)
+
+### 1️⃣ Clone This Repo
 ```bash
-claude mcp add-json gsap-master '{"command":"npx","args":["bruzethegreat-gsap-master-mcp-server@latest"]}'
+git clone https://github.com/Artreeus/curosr-gsap-master-mcp-server.git
+cd curosr-gsap-master-mcp-server
 ```
 
-That's it! You now have the ultimate GSAP assistant in Claude.
+### 2️⃣ Install & Build (One-Time Setup)
+```bash
+npm install
+npm run build
+```
 
-## 🚀 **What You Get - 6 Powerful Tools**
+### 3️⃣ Add to Cursor
 
-### 🧠 **1. AI Animation Creator** (`understand_and_create_animation`)
+**Windows:** Edit `C:\Users\YourUsername\.cursor\mcp.json`  
+**Mac/Linux:** Edit `~/.cursor/mcp.json`
+
+Add this (replace the path with YOUR actual path):
+
+```json
+{
+  "mcpServers": {
+    "gsap-master": {
+      "command": "node",
+      "args": [
+        "C:\\Users\\YourName\\Desktop\\curosr-gsap-master-mcp-server\\dist\\index.js"
+      ]
+    }
+  }
+}
+```
+
+**Then restart Cursor!**
+
+📖 **Detailed instructions:** [See INSTALL.md](./INSTALL.md)
+
+---
+
+## 🚀 What You Get - 6 Powerful Tools
+
+### 🧠 1. AI Animation Creator
 Just describe what you want in natural language:
 - *"Fade in portfolio cards one by one when scrolling"*
 - *"Create a hero title that reveals character by character"*
@@ -26,36 +62,35 @@ Just describe what you want in natural language:
 - 📱 Mobile-optimized by default
 - ⚡ 60fps performance guaranteed
 
-### 📚 **2. GSAP API Expert** (`get_gsap_api_expert`)
+### 📚 2. GSAP API Expert
 Complete documentation for every GSAP feature:
 - Core methods (gsap.to, timeline, etc.)
 - All plugins (ScrollTrigger, SplitText, DrawSVG, MorphSVG, Draggable)
 - Performance tips and best practices
 - Advanced examples and use cases
 
-### 🛠️ **3. Complete Setup Generator** (`generate_complete_setup`)
+### 🛠️ 3. Complete Setup Generator
 One-command environment setup:
 - React, Next.js, Vue, Nuxt, Svelte, Vanilla
 - All plugins and dependencies
 - Performance configurations
 - Starter code and patterns
 
-### 🔧 **4. Expert Debugger** (`debug_animation_issue`)
+### 🔧 4. Expert Debugger
 AI-powered troubleshooting:
 - Performance issues (lag, stuttering)
 - Mobile compatibility problems
 - ScrollTrigger positioning issues
 - Timeline sequencing problems
-- Plugin registration errors
 
-### ⚡ **5. Performance Optimizer** (`optimize_for_performance`)
+### ⚡ 5. Performance Optimizer
 Transform any animation for maximum smoothness:
 - 60fps desktop optimization
 - Mobile-smooth variants
 - Battery-efficient versions
 - Memory leak prevention
 
-### 🎨 **6. Production Patterns** (`create_production_pattern`)
+### 🎨 6. Production Patterns
 Battle-tested animation systems:
 - Hero sections with layered animations
 - Complete scroll systems
@@ -64,24 +99,35 @@ Battle-tested animation systems:
 - Loading sequences
 - Page transitions
 
-## 💡 **Example Usage**
+---
 
-### Create Scroll Animation
-```
-Use the understand_and_create_animation tool to create a smooth parallax hero section with staggered text reveals
-```
+## 💡 Example Usage
 
-### Debug Performance Issues
-```
-Use the debug_animation_issue tool with: "My animations are laggy on mobile Safari"
-```
+### Ask Cursor's AI:
 
-### Generate Complete Setup
+**Create Scroll Animation:**
 ```
-Use the generate_complete_setup tool for React with ScrollTrigger and SplitText plugins
+"Create a smooth parallax hero section with staggered text reveals"
 ```
 
-## 🎯 **Perfect For**
+**Debug Performance:**
+```
+"My GSAP animations are laggy on mobile Safari - help me fix it"
+```
+
+**Generate Setup:**
+```
+"Generate a complete GSAP setup for React with ScrollTrigger"
+```
+
+**Learn:**
+```
+"Teach me how to use GSAP timelines"
+```
+
+---
+
+## 🎯 Perfect For
 
 - **Frontend Developers** - Professional animation implementation
 - **Designers** - Bring designs to life with code
@@ -89,32 +135,36 @@ Use the generate_complete_setup tool for React with ScrollTrigger and SplitText 
 - **Students** - Learn GSAP best practices
 - **Teams** - Consistent animation patterns
 
-## 🌟 **Why This MCP Server?**
+---
 
-### **🧠 AI-Powered Intelligence**
+## 🌟 Why This MCP Server?
+
+### 🧠 AI-Powered Intelligence
 - Understands natural language requests
 - Analyzes intent and generates perfect code
 - Explains techniques and best practices
 
-### **⚡ Performance-First**
+### ⚡ Performance-First
 - Every animation optimized for 60fps
 - Mobile-responsive by default
 - Memory leak prevention
 - GPU acceleration techniques
 
-### **🎯 Production-Ready**
+### 🎯 Production-Ready
 - Battle-tested patterns
 - Industry-specific customizations
 - Complete error handling
 - Professional code structure
 
-### **📚 Comprehensive Coverage**
+### 📚 Comprehensive Coverage
 - Every GSAP method and plugin
 - All animation properties
 - Advanced techniques
 - Framework integrations
 
-## 🎨 **Animation Types Supported**
+---
+
+## 🎨 Animation Types Supported
 
 - **Scroll-Based** - Parallax, reveals, pins, progress bars
 - **Text Effects** - Character reveals, typewriter, morphing
@@ -123,104 +173,71 @@ Use the generate_complete_setup tool for React with ScrollTrigger and SplitText 
 - **Complex Sequences** - Choreographed timelines, scene transitions
 - **Data Visualization** - Charts, counters, progress indicators
 
-## 🚀 **What Makes It Special**
+---
 
-1. **Natural Language Processing** - Just describe what you want
-2. **Framework Agnostic** - Works with any JavaScript framework
-3. **Mobile-First** - Optimized for all devices
-4. **Educational** - Learn while you build
-5. **Community-Driven** - Built for developers, by developers
+## 📦 Requirements
 
-## 📦 **Requirements**
-
-- Claude Desktop or Cursor IDE with MCP support
-- Node.js 18+ (automatically handled by npx)
+- **Cursor IDE** with MCP support
+- **Node.js 18+** ([Download](https://nodejs.org/))
 - No additional setup required!
 
-## 🎯 **Installation Methods**
+---
 
-### 🎨 **For Cursor IDE**
+## ✅ Verify Installation
 
-**Step 1:** Add to your MCP configuration file:
+After restarting Cursor:
 
-**Windows:** `C:\Users\<YourUsername>\.cursor\mcp.json`  
-**macOS/Linux:** `~/.cursor/mcp.json`
+1. Open **Cursor Settings** (`Ctrl+,` or `Cmd+,`)
+2. Navigate to **Tools & MCP**
+3. You should see **"gsap-master"** with a green toggle ✅
 
-```json
-{
-  "mcpServers": {
-    "gsap-master": {
-      "command": "npx",
-      "args": ["-y", "bruzethegreat-gsap-master-mcp-server@latest"]
-    }
-  }
-}
+---
+
+## 🎪 Live Examples
+
+Try these after installation:
+
+### Hero Section Animation
+```
+"Create a hero section with parallax background, staggered text reveals, and floating CTA button"
 ```
 
-**Step 2:** Restart Cursor completely
-
-**Step 3:** Verify installation:
-- Open Cursor Settings (`Ctrl+,` or `Cmd+,`)
-- Navigate to **Tools & MCP**
-- You should see **"gsap-master"** listed
-
-**Step 4:** Start creating! Ask Cursor's AI:
+### Portfolio Grid
 ```
-"Create a GSAP scroll animation for my hero section"
+"Build a portfolio grid that reveals cards one by one with hover effects when scrolling into view"
 ```
 
-### 🎯 **For Claude Desktop**
-
-### **Option 1: One-Line Install (Recommended)**
-```bash
-claude mcp add-json gsap-master '{"command":"npx","args":["bruzethegreat-gsap-master-mcp-server@latest"]}'
+### Text Animation
+```
+"Create a typewriter effect that reveals text character by character with a blinking cursor"
 ```
 
-### **Option 2: Specific Version**
-```bash
-claude mcp add-json gsap-master '{"command":"npx","args":["bruzethegreat-gsap-master-mcp-server@2.1.0"]}'
-```
+---
 
-### **Option 3: Manual Configuration**
-Add to your `claude_desktop_config.json`:
-```json
-{
-  "mcpServers": {
-    "gsap-master": {
-      "command": "npx",
-      "args": ["bruzethegreat-gsap-master-mcp-server@latest"]
-    }
-  }
-}
-```
+## 🐛 Troubleshooting
 
-## 🎪 **Live Examples**
+**Server not showing up?**
+1. Make sure you ran `npm install` and `npm run build`
+2. Check the path in your `mcp.json` is correct
+3. Restart Cursor completely
+4. Check that Node.js is installed: `node --version`
 
-Try these commands after installation:
+**Need help?**  
+[Open an issue](https://github.com/Artreeus/curosr-gsap-master-mcp-server/issues) - I'm happy to help!
 
-### **Hero Section Animation**
-```
-Create a hero section with parallax background, staggered text reveals, and floating CTA button
-```
+---
 
-### **Portfolio Grid**
-```
-Build a portfolio grid that reveals cards one by one with hover effects when scrolling into view
-```
+## 🤝 Contributing
 
-### **Text Animation**
-```
-Create a typewriter effect that reveals text character by character with a blinking cursor
-```
+Found a bug? Have a feature request?
 
-## 🤝 **Contributing**
-
-Found a bug? Have a feature request? 
-- 🐛 **Issues**: [GitHub Issues](https://github.com/bruzethegreat/gsap-master-mcp-server/issues)
+- 🐛 **Issues**: [GitHub Issues](https://github.com/Artreeus/curosr-gsap-master-mcp-server/issues)
 - 💡 **Features**: Share your ideas and use cases
 - 🔧 **Pull Requests**: Contributions welcome!
 
-## 📈 **Stats**
+---
+
+## 📈 Stats
 
 - **6 Professional Tools** for complete GSAP mastery
 - **100+ Animation Patterns** built-in
@@ -228,20 +245,22 @@ Found a bug? Have a feature request?
 - **All Frameworks** supported
 - **100% Free** - including all premium plugins!
 
-## 🏆 **Created By**
+---
 
-**@bruzethegreat** - Passionate about creating tools that empower developers to build amazing animations with ease.
+## 🏆 Created By
 
-## 📜 **License**
+**Artreeus** - Making GSAP animation development easier for everyone!
+
+Original concept inspired by bruzethegreat's work, adapted and improved for Cursor IDE.
+
+---
+
+## 📜 License
 
 MIT License - Use it anywhere, anytime, for any project!
 
 ---
 
-**Transform Claude or Cursor into your personal GSAP animation expert today!** 🎯⚡
+**Transform Cursor into your personal GSAP animation expert today!** 🎯⚡
 
-[![npm version](https://badge.fury.io/js/bruzethegreat-gsap-master-mcp-server.svg)](https://www.npmjs.com/package/bruzethegreat-gsap-master-mcp-server)
-[![Downloads](https://img.shields.io/npm/dm/bruzethegreat-gsap-master-mcp-server.svg)](https://www.npmjs.com/package/bruzethegreat-gsap-master-mcp-server)
-```
-"# gsap-master-mcp-server-cursor" 
-"# curosr-gsap-master-mcp-server" 
+[⭐ Star this repo](https://github.com/Artreeus/curosr-gsap-master-mcp-server) if you find it useful!

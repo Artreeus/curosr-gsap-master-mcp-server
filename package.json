@@ -1,6 +1,6 @@
 {
-  "name": "Artreeus modified cursor : bruzethegreat-gsap-master-mcp-server",
-  "version": "2.3.0",
+  "name": "cursor-gsap-master-mcp-server",
+  "version": "1.0.0",
   "description": "The most comprehensive GSAP MCP server ever created - surgical precision animation control with AI intent analysis, complete API coverage, and production-ready patterns. All GSAP plugins now 100% FREE thanks to Webflow!",
   "main": "dist/index.js",
   "type": "module",
@@ -40,7 +40,7 @@
     "cursor",
     "cursor-ide"
   ],
-  "author": "bruzethegreat",
+  "author": "Artreeus",
   "license": "MIT",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^0.4.0"
@@ -55,10 +55,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bruzethegreat/gsap-master-mcp-server"
+    "url": "https://github.com/Artreeus/curosr-gsap-master-mcp-server"
   },
   "bugs": {
-    "url": "https://github.com/bruzethegreat/gsap-master-mcp-server/issues"
+    "url": "https://github.com/Artreeus/curosr-gsap-master-mcp-server/issues"
   },
-  "homepage": "https://github.com/bruzethegreat/gsap-master-mcp-server#readme"
+  "homepage": "https://github.com/Artreeus/curosr-gsap-master-mcp-server#readme"
 }
