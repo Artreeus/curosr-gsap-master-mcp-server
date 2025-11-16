@@ -133,11 +133,43 @@ Use the generate_complete_setup tool for React with ScrollTrigger and SplitText 
 
 ## 📦 **Requirements**
 
-- Claude Desktop with MCP support
+- Claude Desktop or Cursor IDE with MCP support
 - Node.js 18+ (automatically handled by npx)
 - No additional setup required!
 
 ## 🎯 **Installation Methods**
+
+### 🎨 **For Cursor IDE**
+
+**Step 1:** Add to your MCP configuration file:
+
+**Windows:** `C:\Users\<YourUsername>\.cursor\mcp.json`  
+**macOS/Linux:** `~/.cursor/mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "gsap-master": {
+      "command": "npx",
+      "args": ["-y", "bruzethegreat-gsap-master-mcp-server@latest"]
+    }
+  }
+}
+```
+
+**Step 2:** Restart Cursor completely
+
+**Step 3:** Verify installation:
+- Open Cursor Settings (`Ctrl+,` or `Cmd+,`)
+- Navigate to **Tools & MCP**
+- You should see **"gsap-master"** listed
+
+**Step 4:** Start creating! Ask Cursor's AI:
+```
+"Create a GSAP scroll animation for my hero section"
+```
+
+### 🎯 **For Claude Desktop**
 
 ### **Option 1: One-Line Install (Recommended)**
 ```bash
@@ -206,7 +238,7 @@ MIT License - Use it anywhere, anytime, for any project!
 
 ---
 
-**Transform Claude into your personal GSAP animation expert today!** 🎯⚡
+**Transform Claude or Cursor into your personal GSAP animation expert today!** 🎯⚡
 
 [![npm version](https://badge.fury.io/js/bruzethegreat-gsap-master-mcp-server.svg)](https://www.npmjs.com/package/bruzethegreat-gsap-master-mcp-server)
 [![Downloads](https://img.shields.io/npm/dm/bruzethegreat-gsap-master-mcp-server.svg)](https://www.npmjs.com/package/bruzethegreat-gsap-master-mcp-server)

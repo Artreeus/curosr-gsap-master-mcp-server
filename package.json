@@ -1,6 +1,6 @@
 {
-  "name": "bruzethegreat-gsap-master-mcp-server",
-  "version": "2.2.0",
+  "name": "Artreeus modified cursor : bruzethegreat-gsap-master-mcp-server",
+  "version": "2.3.0",
   "description": "The most comprehensive GSAP MCP server ever created - surgical precision animation control with AI intent analysis, complete API coverage, and production-ready patterns. All GSAP plugins now 100% FREE thanks to Webflow!",
   "main": "dist/index.js",
   "type": "module",
@@ -36,7 +36,9 @@
     "surgical-precision",
     "webflow-free",
     "ai",
-    "claude"
+    "claude",
+    "cursor",
+    "cursor-ide"
   ],
   "author": "bruzethegreat",
   "license": "MIT",
