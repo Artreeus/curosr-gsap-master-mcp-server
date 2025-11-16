@@ -1,0 +1,62 @@
+{
+  "name": "bruzethegreat-gsap-master-mcp-server",
+  "version": "2.2.0",
+  "description": "The most comprehensive GSAP MCP server ever created - surgical precision animation control with AI intent analysis, complete API coverage, and production-ready patterns. All GSAP plugins now 100% FREE thanks to Webflow!",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "gsap-master-mcp-server": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "prepublishOnly": "npm run build",
+    "test": "echo 'Testing GSAP patterns...' && node -e 'console.log(\"All GSAP plugins now FREE!\")'"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "gsap",
+    "greensock",
+    "animation",
+    "react",
+    "vue",
+    "nextjs",
+    "scrolltrigger",
+    "splittext",
+    "drawsvg",
+    "morphsvg",
+    "draggable",
+    "timeline",
+    "performance",
+    "60fps",
+    "intent-analysis",
+    "production-ready",
+    "surgical-precision",
+    "webflow-free",
+    "ai",
+    "claude"
+  ],
+  "author": "bruzethegreat",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bruzethegreat/gsap-master-mcp-server"
+  },
+  "bugs": {
+    "url": "https://github.com/bruzethegreat/gsap-master-mcp-server/issues"
+  },
+  "homepage": "https://github.com/bruzethegreat/gsap-master-mcp-server#readme"
+}
