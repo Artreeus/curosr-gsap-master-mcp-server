@@ -31,3 +31,21 @@ It runs locally over standard input/output and exposes six tools backed by a bui
 - npm
 - An MCP-compatible client that can launch stdio servers
 
+## Installation
+
+Clone the repository, install its dependencies, and compile the TypeScript source:
+
+```bash
+git clone https://github.com/Artreeus/curosr-gsap-master-mcp-server.git
+cd curosr-gsap-master-mcp-server
+npm install
+npm run build
+```
+
+The build creates `dist/index.js`, the executable entry point used by MCP clients. Run it directly to confirm that Node can start the server:
+
+```bash
+npm start
+```
+
+The process waits for MCP messages on stdin, so an idle process is expected. Press `Ctrl+C` to stop it.
