@@ -48,6 +48,22 @@ The build creates `dist/index.js`, the executable entry point used by MCP client
 npm start
 ```
 
+### How it works
+
+```text
+MCP client
+    |  JSON-RPC over stdin/stdout
+    v
+GSAP Master MCP Server
+    |-- tool schemas and request routing
+    |-- GSAP API and plugin knowledge
+    `-- code and guidance generators
+```
+
+The server uses `StdioServerTransport` from the Model Context Protocol SDK. It advertises its tool schemas when the client lists tools, routes calls by tool name, and returns text content. Diagnostic logs are written to stderr so they do not corrupt the protocol stream on stdout.
+
+This repository provides the MCP server and its generated guidance. GSAP itself is a separate dependency that belongs in the project where you use the returned animation code.
+
 The process waits for MCP messages on stdin, so an idle process is expected. Press `Ctrl+C` to stop it.
 
 ## Client configuration
