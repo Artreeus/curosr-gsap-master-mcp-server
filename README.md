@@ -137,3 +137,21 @@ Use optimize_for_performance with the mobile-smooth target on this animation.
 ```
 
 Specific prompts produce more useful output. Include your framework, relevant markup, current code, expected behavior, browser constraints, and accessibility requirements when they matter.
+
+### Suggested workflows
+
+For a new animation:
+
+1. Ask `generate_complete_setup` for the framework and plugins you need.
+2. Use `get_gsap_api_expert` to clarify unfamiliar APIs.
+3. Ask `understand_and_create_animation` for an implementation based on your actual component structure.
+4. Run the result through `optimize_for_performance` for the target device class.
+5. Test keyboard use, reduced-motion behavior, resizing, and component teardown in your application.
+
+For an existing animation bug:
+
+1. Reduce the issue to the smallest relevant markup, styles, and animation code.
+2. Provide that code, the observed result, and the expected result to `debug_animation_issue`.
+3. Apply one recommended change at a time and verify it in the affected browsers.
+
+Generated code is a starting point. Browser support, layout, dependencies, and lifecycle behavior still need to be validated in the target application.
