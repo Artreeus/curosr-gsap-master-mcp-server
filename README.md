@@ -98,3 +98,16 @@ Restart the client after saving the configuration. In Cursor, the server should 
 | `create_production_pattern` | Generate a reusable animation pattern for a common UI scenario | `pattern_type` |
 
 Tool responses are generated locally from the server's embedded knowledge and templates. The server does not install GSAP or modify your application; review and apply the returned code in your own project.
+
+### Tool options
+
+The optional arguments let you shape each response:
+
+- `understand_and_create_animation`: `context` accepts `react`, `vanilla`, `nextjs`, `vue`, `performance-critical`, or `mobile-optimized`; `complexity` ranges from `simple` to `expert`.
+- `get_gsap_api_expert`: `level` accepts `basic`, `intermediate`, `advanced`, or `expert`.
+- `generate_complete_setup`: `framework` accepts `react`, `nextjs`, `vue`, `nuxt`, `svelte`, or `vanilla`; `plugins` is an array of supported plugin names; `performance_level` controls the optimization emphasis.
+- `debug_animation_issue`: add `code` and `expected_behavior` to give the diagnostic tool more context.
+- `optimize_for_performance`: `target` accepts `60fps-desktop`, `mobile-smooth`, `battery-efficient`, or `memory-optimized`.
+- `create_production_pattern`: `pattern_type` covers hero sections, scroll systems, text effects, interactive UI, loading sequences, page transitions, micro-interactions, and data visualization; `industry` tailors the example.
+
+Arguments omitted by the client use the defaults declared in the tool schema.
