@@ -85,3 +85,16 @@ Add a server entry to your MCP client's configuration. Use an absolute path to t
 ```
 
 Restart the client after saving the configuration. In Cursor, the server should then appear under **Settings > Tools & MCP**.
+
+## Available tools
+
+| Tool | Purpose | Required input |
+| --- | --- | --- |
+| `understand_and_create_animation` | Interpret a request and generate an animation approach and code | `request` |
+| `get_gsap_api_expert` | Explain a GSAP method, plugin, or property | `api_element` |
+| `generate_complete_setup` | Generate framework and plugin setup instructions | `framework` |
+| `debug_animation_issue` | Diagnose unexpected animation behavior | `issue` |
+| `optimize_for_performance` | Review animation code for a selected performance target | `animation_code` |
+| `create_production_pattern` | Generate a reusable animation pattern for a common UI scenario | `pattern_type` |
+
+Tool responses are generated locally from the server's embedded knowledge and templates. The server does not install GSAP or modify your application; review and apply the returned code in your own project.
