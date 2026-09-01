@@ -111,3 +111,29 @@ The optional arguments let you shape each response:
 - `create_production_pattern`: `pattern_type` covers hero sections, scroll systems, text effects, interactive UI, loading sequences, page transitions, micro-interactions, and data visualization; `industry` tailors the example.
 
 Arguments omitted by the client use the defaults declared in the tool schema.
+
+## Usage examples
+
+Once the server is enabled, ask your client to use the GSAP tools explicitly or describe the outcome you want. For example:
+
+```text
+Use understand_and_create_animation to build a mobile-friendly card reveal
+in React. Trigger each row at 80% of the viewport and respect reduced motion.
+```
+
+```text
+Use get_gsap_api_expert to explain ScrollTrigger scrub at an intermediate
+level, including cleanup and responsive breakpoint examples.
+```
+
+```text
+Use debug_animation_issue on this timeline. The second tween starts too late;
+I expected a 0.2 second overlap. [paste code]
+```
+
+```text
+Use optimize_for_performance with the mobile-smooth target on this animation.
+[paste code]
+```
+
+Specific prompts produce more useful output. Include your framework, relevant markup, current code, expected behavior, browser constraints, and accessibility requirements when they matter.
