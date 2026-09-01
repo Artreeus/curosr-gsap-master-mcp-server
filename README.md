@@ -48,43 +48,6 @@ The build creates `dist/index.js`, the executable entry point used by MCP client
 npm start
 ```
 
-## Troubleshooting
-
-### The server does not appear in the client
-
-- Run `npm run build` and confirm that `dist/index.js` exists.
-- Use an absolute path in the client configuration.
-- On Windows, escape backslashes in JSON as `\\` or use forward slashes.
-- Confirm the client is invoking Node 18 or newer with `node --version`.
-- Restart the MCP client after changing its configuration.
-
-### The server disconnects immediately
-
-Run `npm start` in a terminal and inspect stderr for startup errors. Reinstall dependencies with `npm install` if the SDK cannot be resolved. Do not configure the client to run `src/index.ts` with plain Node; use the compiled `dist/index.js` entry point.
-
-### A tool is unavailable or rejects its input
-
-Verify the tool name and required argument against the [available tools](#available-tools) table. Enum values are exact: for example, `mobile-smooth` is valid for the optimization target, while `mobile` is not.
-
-### Generated code does not run in an application
-
-Check that GSAP and every referenced plugin are installed and imported in that application. Also verify plugin registration, selectors, framework lifecycle cleanup, and whether the generated example assumes browser-only APIs.
-
-## Contributing
-
-Issues and pull requests are welcome. For code changes:
-
-1. Fork the repository and create a focused branch.
-2. Install dependencies with `npm install`.
-3. Update the source and keep tool schemas consistent with their handlers.
-4. Run `npm run build` and `npm test`.
-5. Describe the behavior change and include a representative MCP prompt or reproduction in the pull request.
-
-Please avoid adding claims to generated responses that cannot be verified, such as guaranteed frame rates. Performance depends on the page, device, browser, and the work performed by each animation frame.
-
-- [Report a bug](https://github.com/Artreeus/curosr-gsap-master-mcp-server/issues)
-- [View the source](https://github.com/Artreeus/curosr-gsap-master-mcp-server)
-
 ### How it works
 
 ```text
@@ -232,3 +195,52 @@ To validate the same artifact used by clients:
 npm run build
 npm start
 ```
+
+## Troubleshooting
+
+### The server does not appear in the client
+
+- Run `npm run build` and confirm that `dist/index.js` exists.
+- Use an absolute path in the client configuration.
+- On Windows, escape backslashes in JSON as `\\` or use forward slashes.
+- Confirm the client is invoking Node 18 or newer with `node --version`.
+- Restart the MCP client after changing its configuration.
+
+### The server disconnects immediately
+
+Run `npm start` in a terminal and inspect stderr for startup errors. Reinstall dependencies with `npm install` if the SDK cannot be resolved. Do not configure the client to run `src/index.ts` with plain Node; use the compiled `dist/index.js` entry point.
+
+### A tool is unavailable or rejects its input
+
+Verify the tool name and required argument against the [available tools](#available-tools) table. Enum values are exact: for example, `mobile-smooth` is valid for the optimization target, while `mobile` is not.
+
+### Generated code does not run in an application
+
+Check that GSAP and every referenced plugin are installed and imported in that application. Also verify plugin registration, selectors, framework lifecycle cleanup, and whether the generated example assumes browser-only APIs.
+
+## Contributing
+
+Issues and pull requests are welcome. For code changes:
+
+1. Fork the repository and create a focused branch.
+2. Install dependencies with `npm install`.
+3. Update the source and keep tool schemas consistent with their handlers.
+4. Run `npm run build` and `npm test`.
+5. Describe the behavior change and include a representative MCP prompt or reproduction in the pull request.
+
+Please avoid adding claims to generated responses that cannot be verified, such as guaranteed frame rates. Performance depends on the page, device, browser, and the work performed by each animation frame.
+
+- [Report a bug](https://github.com/Artreeus/curosr-gsap-master-mcp-server/issues)
+- [View the source](https://github.com/Artreeus/curosr-gsap-master-mcp-server)
+
+## License
+
+The package metadata declares this project under the MIT License. A standalone license file is not currently included in the repository; add one before redistributing the project where a complete license notice is required.
+
+GSAP is a separate product with its own terms. Review the current [GSAP licensing information](https://gsap.com/licensing/) for the animation code and plugins used in your application.
+
+## Acknowledgments
+
+- [GreenSock](https://gsap.com/) for GSAP and its learning resources
+- [Model Context Protocol](https://modelcontextprotocol.io/) for the client-server protocol
+- The original project contributors and users who report issues and suggest patterns
