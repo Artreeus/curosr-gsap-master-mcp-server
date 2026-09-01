@@ -48,6 +48,28 @@ The build creates `dist/index.js`, the executable entry point used by MCP client
 npm start
 ```
 
+## Troubleshooting
+
+### The server does not appear in the client
+
+- Run `npm run build` and confirm that `dist/index.js` exists.
+- Use an absolute path in the client configuration.
+- On Windows, escape backslashes in JSON as `\\` or use forward slashes.
+- Confirm the client is invoking Node 18 or newer with `node --version`.
+- Restart the MCP client after changing its configuration.
+
+### The server disconnects immediately
+
+Run `npm start` in a terminal and inspect stderr for startup errors. Reinstall dependencies with `npm install` if the SDK cannot be resolved. Do not configure the client to run `src/index.ts` with plain Node; use the compiled `dist/index.js` entry point.
+
+### A tool is unavailable or rejects its input
+
+Verify the tool name and required argument against the [available tools](#available-tools) table. Enum values are exact: for example, `mobile-smooth` is valid for the optimization target, while `mobile` is not.
+
+### Generated code does not run in an application
+
+Check that GSAP and every referenced plugin are installed and imported in that application. Also verify plugin registration, selectors, framework lifecycle cleanup, and whether the generated example assumes browser-only APIs.
+
 ### How it works
 
 ```text
