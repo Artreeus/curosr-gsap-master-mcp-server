@@ -155,3 +155,27 @@ For an existing animation bug:
 3. Apply one recommended change at a time and verify it in the affected browsers.
 
 Generated code is a starting point. Browser support, layout, dependencies, and lifecycle behavior still need to be validated in the target application.
+
+## Development
+
+Install dependencies before running any development command:
+
+```bash
+npm install
+```
+
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Run `src/index.ts` directly with `tsx` |
+| `npm run build` | Compile TypeScript into `dist/` |
+| `npm start` | Start the compiled stdio server |
+| `npm test` | Run the current package smoke-test script |
+
+The implementation lives in `src/index.ts`. After changing tool definitions, schemas, or response generators, rebuild before testing the server through an MCP client.
+
+To validate the same artifact used by clients:
+
+```bash
+npm run build
+npm start
+```
