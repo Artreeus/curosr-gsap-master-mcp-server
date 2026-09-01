@@ -70,6 +70,21 @@ Verify the tool name and required argument against the [available tools](#availa
 
 Check that GSAP and every referenced plugin are installed and imported in that application. Also verify plugin registration, selectors, framework lifecycle cleanup, and whether the generated example assumes browser-only APIs.
 
+## Contributing
+
+Issues and pull requests are welcome. For code changes:
+
+1. Fork the repository and create a focused branch.
+2. Install dependencies with `npm install`.
+3. Update the source and keep tool schemas consistent with their handlers.
+4. Run `npm run build` and `npm test`.
+5. Describe the behavior change and include a representative MCP prompt or reproduction in the pull request.
+
+Please avoid adding claims to generated responses that cannot be verified, such as guaranteed frame rates. Performance depends on the page, device, browser, and the work performed by each animation frame.
+
+- [Report a bug](https://github.com/Artreeus/curosr-gsap-master-mcp-server/issues)
+- [View the source](https://github.com/Artreeus/curosr-gsap-master-mcp-server)
+
 ### How it works
 
 ```text
