@@ -49,3 +49,39 @@ npm start
 ```
 
 The process waits for MCP messages on stdin, so an idle process is expected. Press `Ctrl+C` to stop it.
+
+## Client configuration
+
+Add a server entry to your MCP client's configuration. Use an absolute path to the compiled file.
+
+### Windows
+
+```json
+{
+  "mcpServers": {
+    "gsap-master": {
+      "command": "node",
+      "args": [
+        "C:\\path\\to\\curosr-gsap-master-mcp-server\\dist\\index.js"
+      ]
+    }
+  }
+}
+```
+
+### macOS and Linux
+
+```json
+{
+  "mcpServers": {
+    "gsap-master": {
+      "command": "node",
+      "args": [
+        "/absolute/path/to/curosr-gsap-master-mcp-server/dist/index.js"
+      ]
+    }
+  }
+}
+```
+
+Restart the client after saving the configuration. In Cursor, the server should then appear under **Settings > Tools & MCP**.
