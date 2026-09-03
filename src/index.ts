@@ -7,6 +7,9 @@ import {
   ListToolsRequestSchema,
 } from '@modelcontextprotocol/sdk/types.js';
 
+const SERVER_NAME = 'gsap-master-mcp-server';
+const SERVER_VERSION = '1.0.0';
+
 // ========================================================================================
 // GSAP API knowledge used by the tool response generators
 // ========================================================================================
@@ -1307,8 +1310,8 @@ document.querySelectorAll(".hover-element").forEach(element => {
 
 const server = new Server(
   {
-    name: 'gsap-master-mcp-server',
-    version: '2.0.0',
+    name: SERVER_NAME,
+    version: SERVER_VERSION,
   }
 );
 
