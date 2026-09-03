@@ -1,9 +1,15 @@
 {
   "name": "cursor-gsap-master-mcp-server",
   "version": "1.0.0",
-  "description": "The most comprehensive GSAP MCP server ever created - surgical precision animation control with AI intent analysis, complete API coverage, and production-ready patterns. All GSAP plugins now 100% FREE thanks to Webflow!",
+  "description": "A local MCP server for generating, explaining, debugging, and optimizing GSAP animations.",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "type": "module",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "bin": {
     "gsap-master-mcp-server": "./dist/index.js"
   },
