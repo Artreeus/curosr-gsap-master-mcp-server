@@ -235,7 +235,7 @@ Please avoid adding claims to generated responses that cannot be verified, such 
 
 ## License
 
-The package metadata declares this project under the MIT License. A standalone license file is not currently included in the repository; add one before redistributing the project where a complete license notice is required.
+This project is available under the [MIT License](./LICENSE).
 
 GSAP is a separate product with its own terms. Review the current [GSAP licensing information](https://gsap.com/licensing/) for the animation code and plugins used in your application.
 
