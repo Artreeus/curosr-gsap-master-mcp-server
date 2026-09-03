@@ -8,7 +8,7 @@ import {
 } from '@modelcontextprotocol/sdk/types.js';
 
 // ========================================================================================
-// COMPLETE GSAP UNIVERSE DATABASE - Every single method, property, plugin, and technique
+// GSAP API knowledge used by the tool response generators
 // ========================================================================================
 
 const GSAP_COMPLETE_API = {
@@ -509,7 +509,7 @@ tl.to(".star", { morphSVG: ".circle", duration: 1 })
 };
 
 // ========================================================================================
-// ADVANCED INTENT ANALYSIS ENGINE - Understands natural language perfectly
+// Intent analysis helpers for natural-language animation requests
 // ========================================================================================
 
 const INTENT_ANALYZER = {
@@ -1302,12 +1302,12 @@ document.querySelectorAll(".hover-element").forEach(element => {
 };
 
 // ========================================================================================
-// MCP SERVER SETUP - Bulletproof and production ready
+// MCP server setup
 // ========================================================================================
 
 const server = new Server(
   {
-    name: 'ultimate-gsap-mcp-server',
+    name: 'gsap-master-mcp-server',
     version: '2.0.0',
   }
 );
@@ -1318,7 +1318,7 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
     tools: [
       {
         name: 'understand_and_create_animation',
-        description: 'The main AI engine - understands any animation request and generates perfect GSAP code with surgical precision',
+        description: 'Interprets an animation request and generates a tailored GSAP implementation',
         inputSchema: {
           type: 'object',
           properties: {
@@ -2649,38 +2649,34 @@ window.addEventListener('load', () => {
   }
 });
 
-// Start the server with bulletproof error handling
+// Start the stdio server
 async function main() {
   try {
-    console.error('🎯 INFO: Starting Ultimate GSAP MCP Server...');
-    console.error('🎉 INFO: All GSAP plugins now 100% FREE thanks to Webflow!');
-    console.error('🧠 INFO: AI Intent Analysis Engine loaded');
-    console.error('⚡ INFO: Production-ready code generators initialized');
+    console.error('INFO: Starting GSAP Master MCP Server...');
     
     const transport = new StdioServerTransport();
-    console.error('🔌 INFO: Transport initialized: stdio');
+    console.error('INFO: Transport initialized: stdio');
     
     await server.connect(transport);
-    console.error('✅ INFO: Ultimate GSAP MCP Server started successfully');
-    console.error('🎯 INFO: Ready to create pixel-perfect animations with surgical precision!');
+    console.error('INFO: GSAP Master MCP Server started successfully');
   } catch (error) {
-    console.error('💥 FATAL ERROR:', error);
+    console.error('FATAL ERROR:', error);
     process.exit(1);
   }
 }
 
 // Handle process signals gracefully
 process.on('SIGINT', () => {
-  console.error('👋 INFO: Gracefully shutting down GSAP MCP Server...');
+  console.error('INFO: Gracefully shutting down GSAP Master MCP Server...');
   process.exit(0);
 });
 
 process.on('SIGTERM', () => {
-  console.error('👋 INFO: Gracefully shutting down GSAP MCP Server...');
+  console.error('INFO: Gracefully shutting down GSAP Master MCP Server...');
   process.exit(0);
 });
 
 main().catch((error) => {
-  console.error('💥 FATAL ERROR in main():', error);
+  console.error('FATAL ERROR in main():', error);
   process.exit(1);
 });
