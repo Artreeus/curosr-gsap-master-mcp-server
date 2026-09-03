@@ -2669,15 +2669,13 @@ async function main() {
 }
 
 // Handle process signals gracefully
-process.on('SIGINT', () => {
+const shutdown = () => {
   console.error('INFO: Gracefully shutting down GSAP Master MCP Server...');
   process.exit(0);
-});
+};
 
-process.on('SIGTERM', () => {
-  console.error('INFO: Gracefully shutting down GSAP Master MCP Server...');
-  process.exit(0);
-});
+process.once('SIGINT', shutdown);
+process.once('SIGTERM', shutdown);
 
 main().catch((error) => {
   console.error('FATAL ERROR in main():', error);
